@@ -1,38 +1,39 @@
-.App {
+body {
+  padding-top:5%;
+  width: 40%;
+  margin: auto;
+  text-align: left;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+  
+}
+
+.films-container {
+  margin: 5%;
+  padding:6%;
+  border: 6px solid black;
+  background-color: rgb(200, 192, 231);
+  border-radius: 5%;
+}
+
+.film-link {
+  padding-bottom: 3%;
+  padding-top: 3%;
+  font-size: 130%;
+}
+
+hr {
+  border: 1px solid rgb(124, 124, 124);
+  
+}
+
+.more-films-link {
+  margin-top: 6%;
+  background-color: rgb(98, 196, 211);
+  border: 3px solid black;
   text-align: center;
+  padding: 3%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  text-decoration: none;
 }
