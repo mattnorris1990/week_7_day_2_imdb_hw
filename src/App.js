@@ -1,5 +1,6 @@
 import './App.css';
 import FilmsContainer from "./containers/FilmsContainer.js"
+import FilmForm from './components/FilmForm';
 
 function App() {
   return (

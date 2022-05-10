@@ -1,6 +1,7 @@
 import React, {useState} from "react"
 import App from "../App"
 import FilmsList from "../components/FilmsList"
+import FilmForm from "../components/FilmForm"
 
 const FilmsContainer = () => {
 
@@ -34,12 +35,20 @@ const FilmsContainer = () => {
         ]
     )
 
+    const addFilm = (submittedFilm) => {
+        submittedFilm.id = Date.now()
+        const updatedFilms = [...films, submittedFilm]
+        setFilms(updatedFilms)
+    }
+
     return(
         <>
         <div>
         <h2>Upcoming Film Releases for UK</h2>
         <hr/>
         <FilmsList films = {films}/>
+        <hr/>
+        <FilmForm onFilmSubmit={(film) => addFilm(film)}/>
         </div>
         </>
     )
